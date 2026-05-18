@@ -14,7 +14,7 @@
     --main-color7:#090906; 
     --main-color8:#090601; 
     --main-clash-grotesk-r:"clash-Grotesk-Regular";  
-    --main-arleta-r:"Arleta-regular" ;  
+    --main-arlita-r:"Arlita-regular" ;  
     --main-clash-display-r:"ClashDisplay-regular"; 
     --transition:all 0.4s linear;
 
@@ -25,8 +25,8 @@
     src: url(fonts/ClashGrotesk_Complete/ClashGrotesk_Complete/Fonts/OTF/ClashGrotesk-Regular.otf) format(opentype);
 } 
 @font-face {
-    font-family:"Arleta-regular" ;
-    src: url(fonts/arleta/ARLETA.otf) format(opentype);
+    font-family:"Arlita-regular" ;
+    src: url(fonts/arlita/Arlita.otf) format(opentype);
 } 
 @font-face {
     font-family: "ClashDisplay-regular";
@@ -37,35 +37,55 @@
     max-width:1520px ; 
     margin: 0 auto;
 } 
-
+.cmn-gap{
+    margin-top: 112px;
+}
+.cmn-gap1{
+    margin-top: 51px;
+} 
+.cmn-gap2{
+    margin-top: 37px;
+} 
+.cmn-gap3{
+    margin-bottom: 55px;
+}
 html{
     scroll-behavior: smooth;
 } 
 body{
-    background-color: var(--main-color2);
+ background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(img/plane.png);
+ background-position: center;
+ background-repeat: repeat-y;
+ background-size: cover;
+
+
 }
 h1,.h1-title{
-    font-family: var(--main-arleta-r); 
-    font-weight: 500; 
-    font-size: 80px; 
-    /* color: var(--main-color1);  */
+     font-family: var(--main-arlita-r);
+    font-weight: 500;
+    font-size: 80px;
+    max-width: 828px;  
+    color: var(--main-color1);
     text-transform: capitalize;
+
  
    
 } 
 h2,.h2-title{
-    font-family: var(--main-arleta-r); 
+    font-family: var(--main-arlita-r); 
     font-size: 60px; 
     font-weight: 500;
-    text-transform: capitalize;
+    text-transform: capitalize; 
+    color: var(--main-color1);
 
 }
 /* starting  navabar */ 
 .header{
     background-color: var(--main-color2);
+ 
 } 
 
-.nav-item a{
+.nav-item > a{
  color: var(--main-color1); 
  font-family: var(--main-clash-display-r); 
  font-weight: 500;
@@ -124,16 +144,16 @@ border-top: 2px solid var(--main-color3) ;
 /* banner section */
 .hero-banner{
    background-image:
-linear-gradient(
+/* linear-gradient(
 to left,
 rgba(254,255,255,0.1)29%,
 rgba(100,100,100,0.2)67%
-), 
+) , linear-gradient(to top, rgba(255,255,255,0.1)78% , rgba(0,0,0,0.1)88%),  */
 url(img/banner.png);
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
-    height:600px;
+    min-height: 800px;
       display: flex;
     align-items: center;
 
@@ -142,9 +162,10 @@ url(img/banner.png);
     font-family: var(--main-clash-grotesk-r); 
     font-weight: 400; 
     font-size: 22px;  
+    margin: 37px 0 51px;
     /* text-align: justify;  */
-    max-width: 600px;
-
+    max-width: 661px;
+    color: var(--main-color1);
 } 
 .cmn-btn{
     padding: 26px 15px; 
@@ -152,7 +173,7 @@ url(img/banner.png);
     opacity: 0.45; 
     border-radius: 33px; 
     border: solid 2px var(--main-color1);
-    font-family: var(--main-arleta-r); 
+    font-family: var(--main-arlita-r); 
     font-weight: 400; 
     font-size: 24px;
     color: var(--main-color3);
@@ -185,31 +206,52 @@ url(img/banner.png);
 .cmn-btn:hover{
     color: var(--main-color3);
 }
-.cmn-btn2{
-    display: inline-block;
- padding: 19px 15px; 
-    border: 2px solid var(--main-color1);
+
+.subheading{
+    border: 1px ridge #F6F5F1;
     border-radius: 16px;
     background-color: transparent; 
     color: var(--main-color3); 
     text-decoration: none;
-    font-family: var(--main-arleta-r);
-    border-radius: 33px;
+    font-family: var(--main-arlita-r);
     font-size: 24px;
+    max-width: 276px; 
+    cursor: pointer; 
+    position: relative; 
+    z-index: 1; 
+    overflow: hidden;
     /* margin-bottom: 30px; */
+}  
+.subheading::before{ 
+    content: "";
+     position: absolute; 
+    transform: translateY(-100%); 
+    background-color: var(--main-color1); 
+    opacity: 0.1; 
+    z-index: -1; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+      border-radius: 16px; 
+    transition: var(--transition);
 } 
+.subheading:hover::before{
+    transform: translateY(0);
+} 
+.subheading:hover{
+    color: var(--main-color3);
+}
 .color2{
     color: var(--main-color3);
 } 
 
-.royal-club{
-    margin-top: -80px;
-    /* background-color: var(--main-color2); */
-} 
+
 .custom-video{
-    width: 100%;  
-    display: block; 
-    border-radius: 16px; 
-    border: solid 2px var(--main-color3);
-    /* background-size: cover; */
-}
+    width: 100%;   
+    min-height: 500px;
+    border-radius: 30px; 
+    border: solid 2px var(--main-color3); 
+    cursor: pointer;
+} 
+
