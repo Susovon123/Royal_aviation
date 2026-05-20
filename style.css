@@ -328,7 +328,7 @@ Second <hr> = 35% */
 .discover-img::before{
     position: absolute;
     content: ""; 
-    top: 50%; 
+    bottom:-50%; 
     /* transform: translateY(50%); */
     left: 0; 
     width: 100%;
