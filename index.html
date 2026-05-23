@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
    <header class="header">
@@ -31,23 +32,55 @@
           <a class="nav-link " href="#">About us </a>
         </li> 
          <li class="nav-item me-3">
-          <a class="nav-link " href="#">contact</a>
+          <a class="nav-link " href="#" >contact</a>
         </li>
       </ul>
       <a href="#" ><i class="fa-solid fa-magnifying-glass color me-4"></i></a>
-    <a href="#"><i class="fa-regular fa-user color me-4" ></i></a>
-  </div>
+    <a href="#"><i class="fa-regular fa-user color me-4" data-bs-toggle="modal" data-bs-target="#exampleModal" ></i></a>
+  </div> 
 </nav>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-primary mx-auto" id="exampleModalLabel"> Contact Us</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="" method="get">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label ">Email Address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label ">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div> 
+  <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
         </div>
    </header>
 <main> 
   <section class="hero-banner  ">
 <div class="container ">
-      <h1>charter flight through out the world</h1>
-      <p class="cmn-p  ">
+      <h1 data-aos="fade-up"
+     data-aos-duration="3000">charter flight through out the world</h1>
+      <p class="cmn-p  " data-aos="fade-up"
+     data-aos-duration="3000">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam in totam facere officia! Sit eos delectus voluptatem culpa, nostrum ea magni deleniti dolorum!
       </p> 
-        <a href="#" class="cmn-btn py-3">Book your Flight <i class="fas fa-plane-departure"></i></a>
+        <a href="#" class="cmn-btn py-3" data-aos="fade-right"
+     data-aos-duration="3000">Book your Flight <i class="fas fa-plane-departure"></i></a>
     </div>
   </div>  
   </div>
@@ -55,7 +88,8 @@
   <section class="royal-club cmn-gap ">
     <div class="container"> 
     <div  class=" subheading  mx-auto  text-center px-5 py-3 ">Hello Demand</div>  
-<h2 class="h2-title  cmn-gap2 text-center mx-auto ">your perfect day with <span class="color2">royal   aviation club</span></h2> 
+<h2 class="h2-title  cmn-gap2 text-center mx-auto "  data-aos="fade-up"
+     data-aos-duration="2000" data-aos-delay="1000">your perfect day with <span class="color2">royal   aviation club</span></h2> 
 
    <div class="row justify-content-center">
 <div class="col-lg-10 "> 
@@ -76,21 +110,25 @@
   </section> 
  <section class="discover">
       <div class="container"> 
-        <h3 class="h2-title text-center mx-auto">"Discover the Art of Luxury Travel with <span class="color2">Private Jets”</span></h3>
+        <h3 class="h2-title text-center mx-auto"  data-aos="fade-up"
+     data-aos-duration="2000" data-aos-delay="1000">"Discover the Art of Luxury Travel with <span class="color2">Private Jets”</span></h3>
         <div class="row">
-          <div class="col-lg-4 pe-3"> 
+          <div class="col-lg-4 pe-3" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="2000"> 
             <div class="discover-img">
                 <img src="img/Gemini_Generated_Image_nkxdyfnkxdyfnkxd 1.png" class="w-100" alt="plane1" loading="lazy">
             </div>
           
           </div> 
-             <div class="col-lg-4 pe-3"> 
+             <div class="col-lg-4 pe-3" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="2000"> 
               <div class="discover-img">
                    <img src="img/Blog 1.png" class="w-100" alt="plane2" loading="lazy">
               </div>
              
              </div>
-                <div class="col-lg-4 pe-3">  
+                <div class="col-lg-4 pe-3" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="2000">  
                   <div class="discover-img">
                      <img src="img/Weekend vibes 🤩✨ 1.png" class="w-100" alt="plane3" loading="lazy">
                   </div>
@@ -103,6 +141,9 @@
     <script src="script.js"></script> 
     <script src="bootstrap/js/bootstrap.bundle.js"></script> 
     <script src="bootstrap/js/bootstrap.min.js"></script> 
- 
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+ <script>
+    AOS.init();
+ </script>
 </body>
 </html>
