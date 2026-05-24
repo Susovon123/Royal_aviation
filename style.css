@@ -182,7 +182,7 @@ url(img/banner.png);
     opacity: 0.45; 
     border-radius: 33px; 
     border: solid 2px transparent; 
-    background:   linear-gradient(#000, #000) padding-box,linear-gradient(to left , #DDCA67 , #030303 , #0C0C0B , #DDCA67) border-box; 
+    background:   linear-gradient(#000, #000) padding-box,linear-gradient(-12deg , #DDCA67 , #030303 , #0C0C0B , #DDCA67) border-box; 
   
     font-family: var(--main-arlita-r); 
     font-weight: 400; 
@@ -222,7 +222,7 @@ url(img/banner.png);
     border: 1px solid transparent;
     border-radius: 16px;
     /* background-color: transparent;   */
-     background:   linear-gradient(#000, #000) padding-box,linear-gradient(to left , #DDCA67 , #030303 , #0C0C0B , #DDCA67) border-box; 
+     background:   linear-gradient(#000, #000) padding-box,linear-gradient(-12deg , #DDCA67 , #030303 , #0C0C0B , #DDCA67) border-box; 
     color: var(--main-color3); 
     text-decoration: none;
     font-family: var(--main-arlita-r);
@@ -264,9 +264,11 @@ url(img/banner.png);
     cursor: pointer;
 } 
 
-.line{
-    background: linear-gradient(rgb(	241,	226,	140 ),rgb(	10,	7,	2 ),rgb(	241,	226,	140 ),rgb(	10,	7,	2)); 
-    width: 35%; 
+.line{ 
+    background: transparent;
+    background:   linear-gradient(to left, #000, #000) padding-box , linear-gradient(-12deg , rgb(	241,	226,	140 ),rgb(	10,	7,	2 ),rgb(	241,	226,	140 ),rgb(	10,	7,	2)) border-box; 
+    width: 45%;  
+    border: 2px solid transparent;
     /* I used width: 35% because without flex, both <hr> tags and the button must fit in one line manually.
 First <hr> = 35%
 Button area ≈ 20%
@@ -279,7 +281,7 @@ Second <hr> = 35% */
     padding: 14px 58px; 
     border-radius: 16px;
     border: 2px solid transparent;
-       background:   linear-gradient(#000, #000) padding-box,linear-gradient(to left , #DDCA67 , #030303 , #0C0C0B , #DDCA67) border-box;
+       background:   linear-gradient(#000, #000) padding-box,linear-gradient(-12deg , #DDCA67 , #030303 , #0C0C0B , #DDCA67) border-box;
     font-size: 25px;
     text-decoration: none;
     display: inline-block;   
@@ -313,12 +315,12 @@ Second <hr> = 35% */
     display: flex;
     justify-content: center;
     align-items: center; 
-    margin:149px 0px 28px 0px;
+    padding:149px 0px 28px 0px;
 } 
 .royal-club .h2-title{
     max-width: 800px;
 } 
-/* third section (discover) */
+/* third section (discover) */ 
 .discover .h2-title {
     max-width: 800px;
 }  
