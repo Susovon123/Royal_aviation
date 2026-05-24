@@ -51,6 +51,9 @@
 } 
 .cmn-gap4{
     margin-top: 110px;
+} 
+.cmn-gap5{
+    margin-bottom: 91px ;
 }
 html{
     scroll-behavior: smooth;
@@ -97,6 +100,7 @@ h2,.h2-title{
  /* border-bottom: 2px solid transparent ;  */
  transition: all 0.3s ease-in;
 position: relative; 
+margin-right: 47px;
 
 } 
 .nav-item a:hover{
@@ -177,7 +181,9 @@ url(img/banner.png);
     background-color: var(--main-color2); 
     opacity: 0.45; 
     border-radius: 33px; 
-    border: solid 2px var(--main-color1);
+    border: solid 2px transparent; 
+    background:   linear-gradient(#000, #000) padding-box,linear-gradient(to left , #DDCA67 , #030303 , #0C0C0B , #DDCA67) border-box; 
+  
     font-family: var(--main-arlita-r); 
     font-weight: 400; 
     font-size: 24px;
@@ -213,9 +219,10 @@ url(img/banner.png);
 }
 
 .subheading{
-    border: 1px solid #F6F5F1;
+    border: 1px solid transparent;
     border-radius: 16px;
-    background-color: transparent; 
+    /* background-color: transparent;   */
+     background:   linear-gradient(#000, #000) padding-box,linear-gradient(to left , #DDCA67 , #030303 , #0C0C0B , #DDCA67) border-box; 
     color: var(--main-color3); 
     text-decoration: none;
     font-family: var(--main-arlita-r);
@@ -271,7 +278,8 @@ Second <hr> = 35% */
 .cmn-btn1{
     padding: 14px 58px; 
     border-radius: 16px;
-    border: 2px solid var(--main-color1); 
+    border: 2px solid transparent;
+       background:   linear-gradient(#000, #000) padding-box,linear-gradient(to left , #DDCA67 , #030303 , #0C0C0B , #DDCA67) border-box;
     font-size: 25px;
     text-decoration: none;
     display: inline-block;   
@@ -311,9 +319,12 @@ Second <hr> = 35% */
     max-width: 800px;
 } 
 /* third section (discover) */
-.discover .h2-title{
+.discover .h2-title {
     max-width: 800px;
 }  
+.discover p{
+    max-width: 800px;
+}
 .discover-img{
     position: relative; 
     z-index: -1; 
