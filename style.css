@@ -919,8 +919,8 @@ padding: 14px;
 
     .table{
         display:block;
-        overflow-x:auto;
-        white-space:nowrap;
+        overflow-x: auto;
+    
     }
     .join-aviation-club{
         padding:120px 0;
@@ -993,9 +993,7 @@ padding: 14px;
         padding:25px;
         min-height:auto;
     } 
-    .discover-overlay ,h3-title, .discover-overlay-sub{
-    margin: 8px 0;
-}
+
 
     /* Footer */
     .footer .col-lg-4,
@@ -1036,9 +1034,6 @@ padding: 14px;
         margin-bottom:20px;
     }
 
-    .polygon{
-        display:none;
-    }
 
 }
 
@@ -1123,9 +1118,7 @@ padding: 14px;
     .client-text{
         font-size:14px;
     }
-    .discover-overlay ,.h3-title, .discover-overlay-sub{
-    margin: 8px 0;
-}
+
     /* Footer */
     .footer .d-flex{
         flex-direction:column;
@@ -1145,6 +1138,3 @@ padding: 14px;
     }
 }
 
-    .discover-overlay ,h3-title, .discover-overlay-sub{
-    margin: 20px 0 0;
-}
