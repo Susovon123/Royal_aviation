@@ -844,8 +844,18 @@ padding: 14px;
     font-family: var(--main-clash-grotesk-r); 
     font-size: 25px; 
     font-family: 400; 
+    text-transform: capitalize; 
+    color: var(--main-color1);
+}  
+.footer-country-text a{
+    text-decoration: none; 
+        font-family: var(--main-clash-grotesk-r); 
+    font-size: 25px; 
+    font-family: 400; 
     text-transform: capitalize;
-} 
+    color: var(--main-color1);
+
+}
 .divider{
     background-color: var(--main-color3);
     height: 30px;
