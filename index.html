@@ -7,92 +7,190 @@
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
-     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
 </head>
 <body>
+  <!-- navbar -->
    <header class="header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">  
-    <a class="navbar-brand" href="index.html">  <img src="img/Gemini_Generated_Image_mmax5kmmax5kmmax-removebg-preview-Picsart-AiImageEnhancer-Picsart-AiImageEnhancer-Picsart-AiImageEnhancer-Picsart-AiImageEnhancer 1.png" alt="" class="src"></a>
-    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon  "></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarScroll">
-      <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-        <li class="nav-item me-3">
-          <a class="nav-link " aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item me-3">
-          <a class="nav-link" href="#">our service</a>
-        </li>
-         <li class="nav-item me-3">
-          <a class="nav-link" href="#">aircraft fleet</a>
-        </li> 
-        <li class="nav-item me-3">
-          <a class="nav-link " href="#">About us </a>
-        </li> 
-         <li class="nav-item me-3">
-          <a class="nav-link " href="#" >contact</a>
-        </li>
-      </ul>
-      <a href="#" ><i class="fa-solid fa-magnifying-glass color me-4"></i></a>
-    <a href="#"><i class="fa-regular fa-user color me-4" data-bs-toggle="modal" data-bs-target="#exampleModal" ></i></a>
-  </div> 
-</nav>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5 text-primary mx-auto" id="exampleModalLabel"> Contact Us</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form action="" method="get">
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label ">Email Address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div class="container">
 
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label ">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div> 
-  <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div> 
+        <nav class="navbar navbar-expand-lg navbar-dark">
 
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="img/Gemini_Generated_Image_mmax5kmmax5kmmax-removebg-preview-Picsart-AiImageEnhancer-Picsart-AiImageEnhancer-Picsart-AiImageEnhancer-Picsart-AiImageEnhancer 1.png" alt="Logo">
+            </a>
+
+            <!-- Offcanvas Toggle Button -->
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Desktop Menu -->
+            <div class="collapse navbar-collapse d-none d-lg-flex">
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#">Our Service</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#">Aircraft Fleet</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass color me-4"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-user color me-4"
+                       data-bs-toggle="modal"
+                       data-bs-target="#exampleModal"></i>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Offcanvas Menu -->
+        <div class="offcanvas offcanvas-end text-bg-dark"
+             tabindex="-1"
+             id="offcanvasNavbar"
+             aria-labelledby="offcanvasNavbarLabel">
+
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    Menu
+                </h5>
+
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Aircraft Fleet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="mt-4">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass color me-4"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-regular fa-user color"
+                           data-bs-toggle="modal"
+                           data-bs-target="#exampleModal"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-   </header>
+        <!-- Modal -->
+        <div class="modal fade"
+             id="exampleModal"
+             tabindex="-1"
+             aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-primary mx-auto"
+                            id="exampleModalLabel">
+                            Contact Us
+                        </h1>
+                        <button type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="get">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1"
+                                       class="form-label">
+                                    Email Address
+                                </label>
+                                <input type="email"
+                                       class="form-control"
+                                       id="exampleInputEmail1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1"
+                                       class="form-label">
+                                    Password
+                                </label>
+                                <input type="password"
+                                       class="form-control"
+                                       id="exampleInputPassword1">
+                            </div>
+                            <button type="submit"
+                                    class="btn btn-primary">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button"
+                                class="btn btn-primary">
+                            Save Changes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 <main> 
+  <!-- hero section -->
   <section class="hero-banner  ">
 <div class="container ">
-      <h1 data-aos="fade-up"
-     data-aos-duration="3000">charter flight through out the world</h1>
-      <p class="cmn-p  " data-aos="fade-up"
-     data-aos-duration="3000">
+      <h1 
+>charter flight through out the world</h1>
+      <p class="cmn-p  " >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam in totam facere officia! Sit eos delectus voluptatem culpa, nostrum ea magni deleniti dolorum!
       </p> 
-        <a href="#" class="cmn-btn py-3" data-aos="fade-right"
-     data-aos-duration="3000">Book your Flight <i class="fas fa-plane-departure"></i></a>
+        <a href="#" class="cmn-btn py-3" >Book your Flight <i class="fas fa-plane-departure"></i></a>
     </div>
   </div>  
   </div>
 </section>  
+<!-- second section -->
   <section class="royal-club cmn-gap ">
     <div class="container"> 
     <div  class=" subheading  mx-auto  text-center px-5 py-3 ">Hello Demand</div>  
-<h2 class="h2-title  cmn-gap2 text-center mx-auto cmn-gap5 "  data-aos="fade-up"
-     data-aos-duration="2000" data-aos-delay="1000">your perfect day with <span class="color2">royal   aviation club</span></h2> 
+<h2 class="h2-title  cmn-gap2 text-center mx-auto cmn-gap5 "  >your perfect day with <span class="color2">royal   aviation club</span></h2> 
 
-   <div class="row justify-content-center">
-<div class="col-lg-10 "> 
+   <div class="row ">
+<div class="col-lg-10  mx-auto"> 
             <video class="custom-video p-4 d-block" muted controls loop autoplay>
                 <source src="video/mixkit-beautiful-coast-with-motorboats-and-a-pier-seen-from-the-5363-hd-ready.mp4" type="video/mp4">
             </video>
@@ -100,85 +198,611 @@
 </div>
 </div>
     </div>
-    <div class="horizental-line ">
-      <hr class="line">    
-    
- <a href="#" class="cmn-btn1">Dream Come True</a>
-     
-          <hr class="line"> 
-    </div>
+
   </section> 
+  <!-- discover third section card -->
  <section class="discover">
-      <div class="container"> 
-        <h3 class="h2-title text-center mx-auto "  data-aos="fade-up"
-     data-aos-duration="2000" data-aos-delay="1000">"Discover the Art of Luxury Travel with <span class="color2">Private Jets”</span></h3> 
-     <p class="text text-center cmn-p mx-auto cmn-gap5 "  data-aos="fade-up"
-     data-aos-duration="2000" data-aos-delay="1000" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sint nisi, ea maiores distinctio veniam fuga iusto. Vitae dolorem soluta quis voluptatem ex blanditiis laudantium tempora explicabo ab ad eos repellendus exercitationem neque minima, nobis nulla eveniet rem? Tenetur, animi.</p>
-        <div class="row">
-          <div class="col-lg-4 pe-3" data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" data-aos-duration="2000"> 
-            <div class="discover-img">
-                <img src="img/Gemini_Generated_Image_nkxdyfnkxdyfnkxd 1.png" class="w-100" alt="plane1" loading="lazy">
+      <div class="container">  
+          <div class="divider-section">
+            <div class="lines-group me-1">
+              <div class="line mb-4"></div>
+              <div class="line"></div>
             </div>
-          
+            <span class="cmn-btn1">Dream Come True!</span>
+            <div class="lines-group ms-1">
+              <div class="line mb-4"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        <h3 class="h2-title text-center mx-auto "  >"Discover the Art of Luxury Travel with <span class="color2">Private Jets”</span></h3> 
+     <p class="text text-center cmn-p mx-auto cmn-gap5 "   >Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sint nisi, ea maiores distinctio veniam fuga iusto. Vitae dol.</p>
+        <div class="row">
+          <div class="col-lg-4 pe-3"   > 
+            <figure class="discover-img">
+                <img src="img/01plane.png" class="w-100" alt="plane1" loading="lazy">
+                   <div class="discover-overlay">
+    <h4 class="h3-title">Dassault Falcon 7x</h4>
+    <p class="discover-overlay-sub">Capacity Upto 15 People</p>
+    <a href="#" class="discover-overlay-btn">Book Now <i class="fas fa-plane-departure"></i></a>
+</div>
+</figure>
+      
           </div> 
-             <div class="col-lg-4 pe-3" data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" data-aos-duration="2000"> 
-              <div class="discover-img">
-                   <img src="img/Blog 1.png" class="w-100" alt="plane2" loading="lazy">
-              </div>
+             <div class="col-lg-4 pe-3" > 
+              <figure class="discover-img">
+                   <img src="img/02plane.png"  alt="plane2" loading="lazy">
+                                     <div class="discover-overlay">
+     <h4 class="h3-title">Dassault Falcon 7x</h4>
+    <p class="discover-overlay-sub">Capacity Upto 15 People</p>
+    <a href="#" class="discover-overlay-btn">Book Now <i class="fas fa-plane-departure"></i></a>
+</div>
+</figure>
              
              </div>
                 <div class="col-lg-4 pe-3" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration="2000">  
-                  <div class="discover-img">
-                     <img src="img/Weekend vibes 🤩✨ 1.png" class="w-100" alt="plane3" loading="lazy">
-                  </div>
+                  <figure class="discover-img">
+                     <img src="img/03plane.png"  alt="plane3" loading="lazy"> 
+                                        <div class="discover-overlay">
+     <h4 class="h3-title">Dassault Falcon 7x</h4>
+    <p class="discover-overlay-sub">Capacity Upto 15 People</p>
+    <a href="#" class="discover-overlay-btn">Book Now <i class="fas fa-plane-departure"></i></a>
+</div>
+</figure>
                  
                 </div> 
 
-                <div class="col-lg-4 pe-3 cmn-gap4" data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" data-aos-duration="2000"> 
-            <div class="discover-img">
-                <img src="img/Fly private around the world.png" class="w-100" alt="plane1" loading="lazy">
-            </div>
+                <div class="col-lg-4 pe-3 cmn-gap4"> 
+            <figure class="discover-img">
+                <img src="img/03plane.png"  alt="plane1" loading="lazy">
+                                   <div class="discover-overlay">
+      <h4 class="h3-title">Dassault Falcon 7x</h4>
+    <p class="discover-overlay-sub">Capacity Upto 15 People</p>
+    <a href="#" class="discover-overlay-btn">Book Now <i class="fas fa-plane-departure"></i></a>
+</div>
+</figure>
           
           </div> 
-             <div class="col-lg-4 pe-3 cmn-gap4" data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" data-aos-duration="2000"> 
-              <div class="discover-img">
-                   <img src="img/download (25) 1.png" class="w-100" alt="plane2" loading="lazy">
-              </div>
-             
-             </div>
-                <div class="col-lg-4 pe-3 cmn-gap4" data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" data-aos-duration="2000">  
-                  <div class="discover-img">
-                     <img src="img/You’ll be sure to stand out in a red jet 😍 via @yorickmantanus 1.png" class="w-100" alt="plane3" loading="lazy">
-                  </div>
+
+                <div class="col-lg-4 pe-3 cmn-gap4">  
+                  <figure class="discover-img">
+                     <img src="img/04plane.png"  alt="plane3" loading="lazy"> 
+                                        <div class="discover-overlay">
+    <h4 class="h3-title">Dassault Falcon 7x</h4>
+    <p class="discover-overlay-sub">Capacity Upto 15 People</p>
+    <a href="#" class="discover-overlay-btn">Book Now <i class="fas fa-plane-departure"></i></a>
+</div>
+</figure>
                  
                 </div>
+                             <div class="col-lg-4 pe-3 cmn-gap4" > 
+              <figure class="discover-img">
+                   <img src="img/05plane.png"  alt="plane2" loading="lazy">
+                                      <div class="discover-overlay">
+    <h4 class="h3-title">Dassault Falcon 7x</h4>
+    <p class="discover-overlay-sub">Capacity Upto 15 People</p>
+    <a href="#" class="discover-overlay-btn">Book Now <i class="fas fa-plane-departure"></i></a>
+</div>
+</figure>
+             
+             </div>
         </div> 
         <div class="d-flex justify-content-center">
-           <a href="#" class="cmn-btn  cmn-gap4" data-aos="fade-right" data-aos-delay="2000"
-     data-aos-duration="3000">Explore More <i class="fas fa-plane-departure"></i></a>
+           <a href="#" class="cmn-btn  cmn-gap4 mx-auto">Explore More <i class="fas fa-plane-departure"></i></a>
         </div>
-         <div class="horizental-line ">
-      <hr class="line">    
-    
- <a href="#" class="cmn-btn1">service</a>
-     
-          <hr class="line"> 
+ </section> 
+ <section class="service">
+   <div class="container">
+      <div class="divider-section">
+            <div class="lines-group me-1">
+              <div class="line mb-4"></div>
+              <div class="line"></div>
+            </div>
+            <span class="cmn-btn1">Service</span>
+            <div class="lines-group ms-1">
+              <div class="line mb-4"></div>
+              <div class="line"></div>
+            </div>
+          </div> 
+           <h5 class="h2-title text-center mx-auto "  
+    >"Our Jet Charter<span class="color2"> Service”</span></h5> 
+     <p class="text text-center cmn-p mx-auto cmn-gap5 "   >Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sint nisi, ea maiores distinctio veniam fuga iusto.</p>
+     <!-- first service -->
+         <div class="box ">
+    <div class="row align-items-center ">
+        
+        <div class="col-lg-6 px-5">
+             <a href="#" class="cmn-btn2   ">Business</i></a>
+            <h6 class="h4-title"><span class="color2"> Business  </span> Jet Charter</h6>
+             <p class=" cmn-p  cmn-gap5 "   >Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sint nisi, ea maiores distinctio veniam fuga iusto.</p>
+             <a href="#" class="cmn-btn   ">Explore More <i class="fas fa-plane-departure"></i></a>
+        </div>
+
+        <div class="col-lg-6  py-5">
+            <img src="img/service_img_1.png" alt="service" loading="lazy" class="img-fluid">
+        </div>
+
+    </div> 
+
+</div> 
+    <!-- second service --> 
+           <div class="box my-5">
+    <div class="row align-items-center ">
+        
+        <div class="col-lg-6 px-5">
+             <a href="#" class="cmn-btn2   ">Ambulance</i></a>
+            <h6 class="h4-title">Air   <span class="color2">Ambulance </span></h6>
+             <p class=" cmn-p  cmn-gap5 "   >Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sint nisi, ea maiores distinctio veniam fuga iusto.</p>
+             <a href="#" class="cmn-btn   ">Explore More <i class="fas fa-plane-departure"></i></a>
+        </div>
+
+        <div class="col-lg-6  py-5">
+            <img src="img/Mask group (1).png" alt="service" loading="lazy" class="img-fluid">
+        </div>
+
     </div>
-      </div>
+</div> 
+<!-- third service --> 
+     
+           <div class="box ">
+    <div class="row align-items-center ">
+        
+        <div class="col-lg-6 px-5">
+             <a href="#" class="cmn-btn2 ">Delight</i></a>
+            <h6 class="h4-title"><span class="color2"> Delight   </span>Vaccation</h6>
+             <p class=" cmn-p  cmn-gap5 "   >Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sint nisi, ea maiores distinctio veniam fuga iusto.</p>
+             <a href="#" class="cmn-btn   ">Explore More <i class="fas fa-plane-departure"></i></a>
+        </div>
+
+        <div class="col-lg-6  py-5">
+            <img src="img/Mask group (2).png" alt="service" loading="lazy" class="img-fluid">
+        </div>
+
+    </div>
+</div>
+   </div>
  </section>
-</main> 
+ <section class="specialoffer"> 
+  <div class="container">
+
+  
+     <div class="divider-section">
+            <div class="lines-group me-1">
+              <div class="line mb-4"></div>
+              <div class="line"></div>
+            </div>
+            <span class="cmn-btn1">Special Offer</span>
+            <div class="lines-group ms-1">
+              <div class="line mb-4"></div>
+              <div class="line"></div>
+            </div>
+          </div>  
+                  <h5 class="h2-title text-center mx-auto "  
+    >Experience Luxury in the Clouds — <span class="color2">  Special Offer Inside</span></h5> 
+        
+          <table class="table ">
+            <tr>
+              <th> point of departure</th>  
+                 <th> point of arrival </th>  
+                 <th> date of depature </th> 
+                 <th> Aircraft </th> 
+                 <th>cost</th> 
+                 <th>leave a comment</th>
+            </tr> 
+           <tr>
+            <td>
+              mumbai
+            </td> 
+            <td>
+              paris
+            </td> 
+              <td>
+              10:08-11:08
+            </td>  
+            <td>
+              falcon 600
+            </td> 
+            <td>
+              12000 USD
+            </td> 
+            <td class="">
+    <a href="#" class="discover-overlay-btn">Book Now <i class="fas fa-plane-departure"></i></a>
+            </td>
+           </tr> 
+
+            <tr>
+            <td>
+              mumbai
+            </td> 
+            <td>
+              paris
+            </td> 
+              <td>
+              10:08-11:08
+            </td>  
+            <td>
+              falcon 600
+            </td> 
+            <td>
+              12000 USD
+            </td> 
+            <td >
+    <a href="#" class="discover-overlay-btn">Book Now <i class="fas fa-plane-departure"></i></a>
+            </td>
+           </tr>
+
+            <tr>
+            <td>
+              mumbai
+            </td> 
+            <td>
+              paris
+            </td> 
+              <td>
+              10:08-11:08
+            </td>  
+            <td>
+              falcon 600
+            </td> 
+            <td>
+              12000 USD
+            </td> 
+            <td >
+    <a href="#" class="discover-overlay-btn">Book Now <i class="fas fa-plane-departure"></i></a>
+            </td>
+           </tr>
+
+            <tr>
+            <td>
+              mumbai
+            </td> 
+            <td>
+              paris
+            </td> 
+              <td>
+              10:08-11:08
+            </td>  
+            <td>
+              falcon 600
+            </td> 
+            <td>
+              12000 USD
+            </td> 
+            <td >
+    <a href="#" class="discover-overlay-btn">Book Now <i class="fas fa-plane-departure"></i></a>
+            </td>
+           </tr>
+
+            <tr>
+            <td>
+              mumbai
+            </td> 
+            <td>
+              paris
+            </td> 
+              <td>
+              10:08-11:08
+            </td>  
+            <td>
+              falcon 600
+            </td> 
+            <td>
+              12000 USD
+            </td> 
+            <td >
+    <a href="#" class="discover-overlay-btn">Book Now <i class="fas fa-plane-departure"></i></a>
+            </td>
+           </tr>
+
+            <tr>
+         
+            
+          </table>
+           <div class="d-flex justify-content-center">
+           <a href="#" class="cmn-btn  cmn-gap4 mx-auto">Explore More <i class="fas fa-plane-departure"></i></a>
+        </div>
+        </div>
+ </section>
+ <!-- mission -->
+  <section class="mission">
+    <div class="container">
+      <h6 class="h2-title  cmn-gap2 text-center mx-auto cmn-gap5 "  >Meet The Mind Behind <span class="color2">The Mission</span></h6> 
+      <div class="row">
+        <div class="col-lg-3">
+         <div class="card">
+  <img src="img/client3.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-title">Alicia Cieria</p>
+    <p class="card-text">Director Of Royal Aviation</p>
+  <img src="img/Ashi_2-removebg-preview.png" alt="design" loading="lazy" class="image-overlay">
+  </div>
+</div>
+        </div>
+          <div class="col-lg-3">
+         <div class="card">
+  <img src="img/client.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-title">Sargio Marquina</p>
+    <p class="card-text">Managing Head</p>
+ <img src="img/Ashi_2-removebg-preview.png" alt="design" loading="lazy" class="image-overlay">
+  </div>
+</div>
+        </div>
+<div class="col-lg-3">
+         <div class="card">
+  <img src="img/client1.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-title">Raquel Murio</p>
+    <p class="card-text">Head of customer</p>
+     <img src="img/Ashi_2-removebg-preview.png" alt="design" loading="lazy" class="image-overlay">
+  </div>
+</div>
+        </div>
+<div class="col-lg-3">
+         <div class="card">
+  <img src="img/client2.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-title">Marccdicc Herara</p>
+    <p class="card-text">Chief Executive</p>
+    <img src="img/Ashi_2-removebg-preview.png" alt="design" loading="lazy" class="image-overlay">
+  </div>
+</div>
+        </div>
+          
+      </div> 
+      <div class="d-flex justify-content-center">
+           <a href="#" class="cmn-btn  cmn-gap4 mx-auto">Explore More <i class="fas fa-plane-departure"></i></a>
+        </div>
+    </div>
+  </section>
+  <!-- client testomonial  -->
+  <section class="our-client">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+<img src="img/aero-pane.png" alt="plane-mask-group-overlay" loading="lazy">
+    </div>
+    <div class="col-lg-5">
+       <a href="#" class="cmn-btn   ">Testimonals</i></a>
+<h5 class="h2-title "  
+    >What Our Client Says About <span class="color2">Flying with Us </span></h5> 
+<div class="box1 d-flex"> 
+  <img src="img/star.png" alt="star" loading="lazy" class="star-logo">
+  <img src="img/person_1.png" alt="person-client" loading="lazy" class="client-image">
+ <div class="client-content">
+   <p class="client-title  "> Mariana Disouza</p>
+    <p class="client-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime esse eos nisi totam enim! Consequatur inventore et placeat sit debitis. Est, a alias!</p>
+ </div>
+</div> 
+<div class="box1 d-flex">
+    <img src="img/star.png" alt="star" loading="lazy" class="star-logo">
+  <img src="img/person_2.png" alt="person-client" loading="lazy" class="client-image">
+ <div class="client-content">
+   <p class="client-title  "> juliana Costraa</p>
+    <p class="client-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime esse eos nisi totam enim! Consequatur inventore et placeat sit debitis. Est, a alias!</p>
+ </div>
+</div>
+    </div> 
+    <div class="col-lg-6">
+      <div class="box2">  
+        <div class="bar1">
+
+        </div>
+        <p class="cmn-p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ea velit asperiores rerum, possimus nam officia culpa nostrum obcaecati! Rem suscipit fuga consequuntur laborum esse quod, non tempore numquam obcaecati, quibusdam ab asperiores exercitationem amet. Aliquid nihil quibusdam cupiditate et placeat magni nobis veritatis consectetur.</p> 
+        <div class="d-flex">
+          <img src="img/student_1.png" alt="comment" loading="lazy" class="student-image"> 
+          <div class="student-content">
+            <p class="student-title">
+              Benjamin Martinez
+            </p> 
+            <p class="student-text">
+              Weakth AI Student 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> 
+      <div class="col-lg-6">
+      <div class="box2">  
+        <div class="bar1">
+
+        </div>
+        <p class="cmn-p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ea velit asperiores rerum, possimus nam officia culpa nostrum obcaecati! Rem suscipit fuga consequuntur laborum esse quod, non tempore numquam obcaecati, quibusdam ab asperiores exercitationem amet. Aliquid nihil quibusdam cupiditate et placeat magni nobis veritatis consectetur.</p> 
+        <div class="d-flex">
+          <img src="img/student_1.png" alt="comment" loading="lazy" class="student-image"> 
+          <div class="student-content">
+            <p class="student-title">
+              Benjamin Martinez
+            </p> 
+            <p class="student-text">
+              Weakth AI Student 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>  
+       <div class="col-lg-6">
+      <div class="box2">  
+        <div class="bar1">
+
+        </div>
+        <p class="cmn-p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ea velit asperiores rerum, possimus nam officia culpa nostrum obcaecati! Rem suscipit fuga consequuntur laborum esse quod, non tempore numquam obcaecati, quibusdam ab asperiores exercitationem amet. Aliquid nihil quibusdam cupiditate et placeat magni nobis veritatis consectetur.</p> 
+        <div class="d-flex">
+          <img src="img/student_1.png" alt="comment" loading="lazy" class="student-image"> 
+          <div class="student-content">
+            <p class="student-title">
+              Benjamin Martinez
+            </p> 
+            <p class="student-text">
+              Weakth AI Student 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> 
+       <div class="col-lg-6">
+      <div class="box2">  
+        <div class="bar1">
+
+        </div>
+        <p class="cmn-p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ea velit asperiores rerum, possimus nam officia culpa nostrum obcaecati! Rem suscipit fuga consequuntur laborum esse quod, non tempore numquam obcaecati, quibusdam ab asperiores exercitationem amet. Aliquid nihil quibusdam cupiditate et placeat magni nobis veritatis consectetur.</p> 
+        <div class="d-flex">
+          <img src="img/student_1.png" alt="comment" loading="lazy" class="student-image"> 
+          <div class="student-content">
+            <p class="student-title">
+              Benjamin Martinez
+            </p> 
+            <p class="student-text">
+              Weakth AI Student 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> 
+ <div class="d-flex justify-content-center">
+           <a href="#" class="cmn-btn  cmn-gap4 mx-auto">Explore More <i class="fas fa-plane-departure"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+<secion class="join-aviation-club cmn-gap">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="join-aviation-img">
+          <img src="img/Aviation club.png" alt="aviation " loading="lazy" class="img-fluid"> 
+
+        </div> 
+    
+      </div> 
+      <div class="col-lg-6">
+              <a class="cmn-btn" href="#">Nothing ventured, nothing gained!</a>
+              <h5 class="h2-title">
+                <span class="join-aviation-club-title">30</span> years
+              </h5>
+              <p>
+                Three Decades, Thousands of Journeys, One Legacy in the Sky."
+              </p>
+             
+              <div class="join-avitation-content">
+                <img src="img/Ashi_2-removebg-preview.png" alt="Ashi" img-fluid loading="lazy" />
+                <h5 class="h2-title">Elevate Your Lifestyle — <span class="color2">Join Our Aviation Club</span></h5>
+                <form action="#" method="get">
+                  <div class="mb-3">
+                   <label for="exampleInputText1" class="form-label">enter your name</label>
+    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="emailHelp" placeholder="enter your name">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">enter your email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="@gmail.com">
+  </div>
+  <div class="my-3">
+    <label for="exampleInputText1" class="form-label">enter your contact no.</label>
+    <input type="tel" class="form-control" id="exampleInputText1" aria-describedby="emailHelp" placeholder="+91">
+  </div>
+  <div class="btn d-flex justify-content-center">
+            <a href="#" class="cmn-btn1 m-auto"
+              >Subscribe Now
+              <span class="icon ms-2"
+                ><i class="fa-solid fa-plane-departure"></i></span
+            ></a>
+          </div>
+  
+</form>
+ 
+              </div>
+            </div>
+    </div>
+  </div>
+</secion>
+</main>  
+<footer class="footer cmn-gap">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4">
+          <figure class="footer-img">
+            <img src="img/Gemini_Generated_Image_mmax5kmmax5kmmax-removebg-preview-Picsart-AiImageEnhancer-Picsart-AiImageEnhancer-Picsart-AiImageEnhancer-Picsart-AiImageEnhancer 1.png" alt="logo">
+          </figure> 
+          <p class="footer-text">      royal aviation, a trusted choice for those valuing time, service, and reliability Explore unique features to customize your private flying experience your way</p> 
+          <div class="d-flex ">
+            <i class="fa-solid fa-phone cmn-gap6" style="color: rgb(246, 242, 0);"></i><p>IN 91-11-40689002</p>
+          </div>
+</div> 
+<div class="col-lg-2"> 
+  <!-- <p class="footer-sub-heading">Our Product</p> -->
+  <ul class="footer-head">
+     <li class="footer-link"><a href="">our product</a></li>
+    <li class="footer-link"><a href="">our service</a></li>
+   <li class="footer-link"><a href="">membership</a></li>
+ <li class="footer-link"><a href="">our fleet</a></li>
+  <li class="footer-link"><a href="">airpots</a></li>
+  <li class="footer-link"><a href="">about us</a></li>
+  <li class="footer-link"><a href="">e- book</a></li>
+  </ul>
+</div>  
+<div class="col-lg-2"> 
+  <!-- <p class="footer-sub-heading">Our Blogs</p> -->
+  <ul class="footer-head"> 
+      <li class="footer-link"><a href="">our blogs</a></li>
+    <li class="footer-link"><a href="">career</a></li>
+   <li class="footer-link"><a href="">contact us</a></li>
+ <li class="footer-link"><a href="">privacy policy</a></li>
+  <li class="footer-link"><a href="">term and condition</a></li>
+  <li class="footer-link"><a href="">News& Made</a></li>
+  <li class="footer-link"><a href="">FAQs</a></li>
+  </ul>
+</div>  
+
+<div class="col-lg-4">
+  <p class="footer-text">Get the latest Update</p>  
+  <div class="d-flex ">
+<input type="email" placeholder="enter your mail" id="mail">
+<a href="#" class="cmn-btn3">Subscribe</a>
+  </div>
+  <div class="footer-circle">
+    <div class="circle">
+      <i class="fa-brands fa-x-twitter"></i>
+    </div> 
+    <div class="circle">
+<i class="fa-brands fa-instagram" ></i>
+    </div> 
+    <div class="circle">
+<i class="fa-brands fa-facebook-f"></i>
+    </div> 
+    <div class="circle">
+      <i class="fa-brands fa-youtube"></i>
+    </div>
+  </div>
+<div class="footer-country">
+
+    <p class="footer-country-text">Delhi</p>
+    <div class="divider"></div>
+
+    <p class="footer-country-text">mumbai</p>
+    <div class="divider"></div>
+
+    <p class="footer-country-text">bangalore</p>
+    <div class="divider"></div>
+
+    <p class="footer-country-text">dubai</p>
+
+</div>
+
+  
+</div>
+  </div>
+  <div class="divider1">
+
+  </div> 
+      <p class="footer-country-text">
+        © 2014-2024 All right reserved by royal Aviation Services Private Limited
+      </p>
+</div>
+</footer>
     <script src="script.js"></script> 
     <script src="bootstrap/js/bootstrap.bundle.js"></script> 
     <script src="bootstrap/js/bootstrap.min.js"></script> 
- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
- <script>
-    AOS.init();
- </script>
+
 </body>
 </html>
