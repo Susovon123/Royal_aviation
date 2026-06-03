@@ -38,7 +38,7 @@
     margin: 0 auto;
 } 
 .cmn-gap{
-    margin-top: 112px;
+    padding: 112px 0;
 }
 .cmn-gap1{
     margin-top: 51px;
@@ -50,11 +50,15 @@
     margin-bottom: 55px;
 } 
 .cmn-gap4{
-    margin-top: 110px;
-} 
+    margin: 110px 0;
+}  
+.cmn-gap6{
+    margin-right: 8px;
+}
 .cmn-gap5{
     margin-bottom: 91px ;
-}
+} 
+
 html{
     scroll-behavior: smooth;
 } 
@@ -62,7 +66,7 @@ body{
  background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(img/plane.png);
  background-position: center;
  background-repeat: repeat-y;
- background-size: cover;
+ background-size: contain;
 min-height: 100vh;
 
 }
@@ -83,7 +87,25 @@ h2,.h2-title{
     font-weight: 500;
     text-transform: capitalize; 
     color: var(--main-color1);
-
+}  
+h3, .h3-title{
+    font-family: var(--main-arlita-r);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.1;
+    text-transform: capitalize;
+    color: var(--main-color1);
+} 
+h4,.h4-title{
+    font-family: var(--main-arlita-r);
+    font-weight: 400;
+    font-size: 50px;
+    text-transform: capitalize; 
+    color: var(--main-color1);
+}
+ 
+figure{
+    display: block;
 }
 /* starting  navabar */ 
 .header{
@@ -179,7 +201,7 @@ url(img/banner.png);
 .cmn-btn{
     padding: 26px 15px; 
     background-color: var(--main-color2); 
-    opacity: 0.45; 
+    /* opacity: 0.45;  */
     border-radius: 33px; 
     border: solid 2px transparent; 
     background:   linear-gradient(#000, #000) padding-box,linear-gradient(-12deg , #DDCA67 , #030303 , #0C0C0B , #DDCA67) border-box; 
@@ -223,7 +245,7 @@ url(img/banner.png);
     border-radius: 16px;
     /* background-color: transparent;   */
      background:   linear-gradient(#000, #000) padding-box,linear-gradient(-12deg , #DDCA67 , #030303 , #0C0C0B , #DDCA67) border-box; 
-    color: var(--main-color3); 
+    color: var(--main-color1); 
     text-decoration: none;
     font-family: var(--main-arlita-r);
     font-size: 24px;
@@ -231,7 +253,8 @@ url(img/banner.png);
     cursor: pointer; 
     position: relative; 
     z-index: 1; 
-    overflow: hidden;
+    overflow: hidden; 
+    
 }  
 .subheading::before{ 
     content: "";
@@ -264,28 +287,16 @@ url(img/banner.png);
     cursor: pointer;
 } 
 
-.line{ 
-    background: transparent;
-    background:   linear-gradient(to left, #000, #000) padding-box , linear-gradient(-12deg , rgb(	241,	226,	140 ),rgb(	10,	7,	2 ),rgb(	241,	226,	140 ),rgb(	10,	7,	2)) border-box; 
-    width: 45%;  
-    border: 2px solid transparent;
-    /* I used width: 35% because without flex, both <hr> tags and the button must fit in one line manually.
-First <hr> = 35%
-Button area ≈ 20%
-Second <hr> = 35% */
-    height: 20px;
-
-  
-} 
 .cmn-btn1{
     padding: 14px 58px; 
     border-radius: 16px;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
        background:   linear-gradient(#000, #000) padding-box,linear-gradient(-12deg , #DDCA67 , #030303 , #0C0C0B , #DDCA67) border-box;
+       /* max-width: 320px; */
     font-size: 25px;
     text-decoration: none;
-    display: inline-block;   
-    color: var(--main-color3); 
+    display: block;   
+    color: var(--main-color1); 
     text-decoration: none;
     font-family: var(--main-arlita-r);  
     position: relative;
@@ -311,57 +322,829 @@ Second <hr> = 35% */
     transform: translateX(0);
 } 
 
-.horizental-line{
+
+.divider-section {
     display: flex;
     justify-content: center;
-    align-items: center; 
-    padding:149px 0px 28px 0px;
-} 
+    align-items: center;
+    width: 100%; 
+    margin: 90px 0;
+}
+.lines-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.lines-group:first-child .line {
+    background: linear-gradient(to right, #0A0702, #F1E28C);
+}
+
+.lines-group:last-child .line {
+    background: linear-gradient(to left, #0A0702, #F1E28C);
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    opacity: 0.7;
+}
 .royal-club .h2-title{
-    max-width: 800px;
+    max-width: 879px;
 } 
-/* third section (discover) */ 
+/* third section (card) */ 
 .discover .h2-title {
-    max-width: 800px;
+    max-width: 879px;
 }  
 .discover p{
-    max-width: 800px;
+    max-width: 879px;
 }
-.discover-img{
-    position: relative; 
-    z-index: -1; 
-    display: inline-block;
-}
-.discover-img img{
-      min-height: 350px;
-   object-fit: cover; 
-  
-   display: block;
 
-}   
-
-.discover-img::before{
-    position: absolute;
-    content: ""; 
-    bottom: -50%;
-    left: 0; 
+.discover-img {
+    position: relative;
+    z-index: 1;
+    display: block;        
     width: 100%;
-    height: 100%;
-    background-image: url(img/Subtract.png); 
+    padding-bottom: 80px;  
+   
+}
+
+.discover-img img {
+    min-height: 484px;
+    object-fit: cover;
+    display: block;
+     border-radius: 33px;
+    width: 100%;           
+}
+
+.discover-img::before {
+    position: absolute;
+    content: "";
+    bottom: -10%;  /*subtract image second iamge will be above */        
+    left: 0;
+    width: 100%;
+    height: 60%;      /* it will be perfect shape 60% if 100% it will break*/   
+    background-image: url(img/Subtract.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain; 
-    z-index: 1;
+    background-size: contain;
+    z-index: 2;
+}
+
+.discover-overlay {
+    position: absolute;
+    /* for text bottom 10px */
+    bottom: 10px;        
+    left: 0;
+    width: 100%; /*it taken full width*/
+    z-index: 3;
+    text-align: center;
+    /* padding: 0 16px; */
+    color: var(--main-color1);
+} 
+.discover-overlay-sub {
+    font-size: 14px;
+    color: var(--main-color1);
+    font-family: var(--main-clash-grotesk-r);
+    margin-bottom: 34px;
+    /* margin-top: 2px; */
+}
+
+.discover-overlay-btn {
+    display: inline-block;
+    padding: 20px 29px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    margin-top: 14px;
+    background: linear-gradient(#000, #000) padding-box,
+                linear-gradient(-12deg, #DDCA67, #030303, #0C0C0B, #DDCA67) border-box;
+    color: var(--main-color3);
+    font-size: 14px;
+    text-decoration: none;
+    font-family: var(--main-arlita-r); 
+    /* background: transparent;  */
+
+
 } 
 
-@media (max-width:800px) {
-    .discover-img img{
-        min-height: 260px;
-        width: 100%; 
-    } 
-    .discover-img{
-        margin: 40px 0;
-        display: flex;
-        justify-content: center;
+/* our service */
+.box{
+    background-color: var(--main-color2);
+    width: 100%; 
+    min-height: 546px; 
+    border-radius: 70px; 
+    border: 2px solid #27220D; 
+    padding: 74px;
+    position: relative;
+}   
+.box::after{
+    position: absolute;
+    content: "" ; 
+    width: 130px;;
+    height: 5px;
+    border-radius:4px ;
+    top: 0;
+    left: 32px; 
+    background-color:var(--main-color3) ; 
+    /* box-shadow: inset 12px 0 12px #DDCA67; */
+}
+
+/* special offer table section */
+.specialoffer .h2-title{
+    max-width: 925px;
+}
+.table th {
+    color: var(--main-color1); 
+    text-transform: capitalize; 
+    
+    font-family: var(--main-clash-grotesk-r);
+    font-weight: 500;
+    font-size: 24px; 
+    /* padding: 25px 15px;  */
+    /* border-bottom: solid 1px var(--main-color3);  */
+    /* border-collapse:separate ;  */
+    background: none;
+    position: relative;
+    z-index: 1;
+    border: none;
+}    
+.table th::after{
+position: absolute; 
+content:""; 
+width: 153px; 
+height: 2px;  
+bottom: -12px; 
+left: 0; 
+background-color: var(--main-color3);
+z-index: -1; 
+
+
+
+}
+.table td{
+       color: var(--main-color1); 
+    text-transform: capitalize; 
+    background: none;
+    font-family: var(--main-clash-grotesk-r);
+    font-weight: 500;
+    font-size: 24px; 
+    /* padding: 25px 15px;  */
+    border-radius: 50px;  
+    border: none;
+  
+
+} 
+.table tr {
+    margin: 38px 0;
+}
+.table {
+    border-collapse: separate;  
+      border-spacing: 0 20px;
+  
+}  
+.cmn-btn2{
+    display: inline-block;
+    padding: 20px 29px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+  
+    background: linear-gradient(#000, #000) padding-box,
+                linear-gradient(-12deg, #DDCA67, #030303, #0C0C0B, #DDCA67) border-box;
+    color: var(--main-color1);
+    font-size: 14px;
+    text-decoration: none;
+    font-family: var(--main-arlita-r); 
+    /* background: transparent;  */
+} 
+/* mission */ 
+.mission h6{
+    max-width: 715px;
+}
+.card{
+    border: 1px solid var(--main-color3); 
+    border-radius: 16px;
+    background-color: transparent; 
+    position: relative; 
+    width: 100%;
+    height: auto;
+
+} 
+.card-img-top{
+    border-radius: 16px;
+    width: 100%;
+    display: block; 
+    position: relative; 
+    z-index: 1;
+} 
+.card-body{
+    position: absolute;
+    left: 10px; 
+    bottom: 20px; 
+    z-index: 2; 
+    /* padding: 0; */
+    /* margin: 0 auto; */
+} 
+.image-overlay{
+    position: absolute;
+    top: 69px; 
+    /* left: 0; */
+    height: 94px;
+    width: 100%;
+}
+.card-title{
+    font-family: var(--main-arlita-r);
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--main-color1);
+ text-transform: capitalize;
+
+
+
+}
+.card-text{
+    color: var(--main-color1); 
+    font-family:var(--main-arlita-r) ;
+    text-transform: capitalize; 
+    
+} 
+
+/* our clients say flying  */ 
+.our-client .h2-title{
+    max-width: 625px; 
+    margin: 40px 0;
+ 
+}  
+.our-client{
+    background: linear-gradient(#000, #000) padding-box,
+                linear-gradient(-12deg, #0C0C0B, #0C0C0B , #DDCA67 ,#DDCA67) border-box; 
+      border: 1px solid transparent;
+    border-radius: 20px;
+    /* padding: 20px; */  
+    padding: 20px 0;
+
+}
+.box1{
+    max-width: 654px; 
+    min-height: 174px; 
+    border:1px solid var(--main-color3);
+    margin: 18px 0 7px; 
+    position: relative;
+    z-index: 1;
+} 
+.client-image{
+    object-fit: contain; 
+    width: 126px;
+    height: 166px; 
+    padding-left: 12px;
+} 
+.client-text , .client-title{
+    color: var(--main-color1); 
+    padding: 12px 6px 0 ;
+    text-transform: capitalize;
+} 
+.client-title{
+    font-size: 20px; 
+    font-family: var(--main-clash-grotesk-r);
+    font-weight: 600; 
+
+} 
+.client-text{
+        font-size: 18px; 
+    font-family: var(--main-clash-grotesk-r);
+    font-weight: 400; 
+} 
+.star-logo{
+position: absolute;
+z-index: 2; 
+width: 50px;
+height: 50px; 
+bottom: 150px;
+right: 4px;
+
+} 
+.box2{
+    padding: 34px 43px ; 
+    background-color: transparent; 
+    border: 1px solid var(--main-color3) ; 
+    max-width: 608px; 
+    min-height:336px; 
+    border-radius: 16px; 
+    position: relative; 
+    z-index: 1; 
+    margin: 12px 0;
+} 
+.bar1{
+    position: absolute; 
+    z-index: 2; 
+    top: 12px; 
+    left: 24px;   
+    background-color: var(--main-color3); 
+    width: 88px; 
+    height: 3px;
+}
+.cmn-p2{
+    max-width: 519px; 
+    font-size: 18px;
+    font-family: var(--main-clash-grotesk-r); 
+    font-weight: 400; 
+    color: var(--main-color1);
+} 
+.student-title{
+font-size: 18px; 
+font-family: var(--main-clash-grotesk-r); 
+font-weight: 500; 
+color: var(--main-color1);
+margin-left: 9px;
+} 
+.student-text{
+font-size: 14px; 
+font-family: var(--main-clash-grotesk-r); 
+font-weight: 500; 
+color: var(--main-color1); 
+margin-left: 9px; 
+} 
+.student-image{
+    width: 56px; 
+    height: 56px;
+} 
+
+/* join aviation club */ 
+.join-aviation-club{
+    padding: 204px 0;
+} 
+.join-aviation-club .h2-title{
+    color: var(--main-color3);
+        margin: 51px 0 33px;
+} 
+.join-aviation-club-title{
+        font-family: var(--main-clash-grotesk-r);
+    font-size: 200px;
+    font-weight: 600;
+}
+ .join-aviation-club p{
+    max-width: 527px;
+    font-family: var(--main-clash-grotesk-r);
+    font-size: 30px;
+    line-height: 1.2;
+    /* margin-bottom: 84px; */
+ } 
+ .form-label {
+     font-family: var(--font-ClashDisplay);
+    font-size: 20px;
+    color: var(--main-color1);
+    text-transform: capitalize;
+    margin-left: 20px;
+    margin-bottom: 21px;
+}
+.form-control {
+    background: none;
+    border-radius: 16px;
+    border: 1px solid rgba(221,202,103,0.5);
+    padding: 22px 20px;
+    margin-bottom: 32px;
+}
+
+
+/* footer */
+.footer-img{
+    max-width: 169px; 
+    min-height: 169px;
+}
+.footer{
+       border: 1px solid transparent;
+    border-radius: 20px;
+  
+    background: linear-gradient(#000, #000) padding-box,
+                linear-gradient(-12deg, #DDCA67, #030303, #0C0C0B, #DDCA67) border-box;
+}
+.footer-text{
+   
+    font-family: var(--main-clash-grotesk-r); 
+    max-width: 468px; 
+    min-height: 111px; 
+    font-size:25px ;
+    font-weight: 400;
+} 
+.footer ,p{
+ color: #FFF;
+}
+.footer-head {
+    padding-left: 0;
+} 
+ul,li{
+    list-style: none;
+}
+
+.footer-link > a{
+      font-family: var(--main-clash-grotesk-r);
+    font-weight: 400;
+    font-size: 22px; 
+    text-transform: capitalize; 
+    text-decoration: none;
+    color: var(--main-color1);
+    transition: all 0.3s ease;
+    transform: scale(0.9);
+
+} 
+.footer-link > a:hover{
+transform: scale(1);
+    color: var(--main-color3);
+}
+.footer-link{
+    margin-top: 14px;
+} 
+.footer-text{
+         font-family: var(--main-clash-grotesk-r);
+    font-weight: 400;
+    font-size: 22px; 
+    text-transform: capitalize; 
+    text-decoration: none;
+    color: var(--main-color1);
+} 
+input[type="email"]{
+width: 100%;
+    background: none; 
+    padding: 12px;
+    border-radius: 26px; 
+    text-align: center; 
+    outline: none;
+ border: 2px solid var(--main-color3);
+} 
+
+.cmn-btn3{
+    background-color: var(--main-color4); 
+    color: var(--main-color2);
+    text-decoration: none;
+    text-transform: capitalize; 
+    border-radius: 26px;
+    padding: 12px 22px; 
+    font-family: var(--main-clash-grotesk-r);
+    font-size: 25px;
+    font-weight: 400px; 
+    display: inline-block;
+} 
+.footer-circle{
+    display: flex; 
+    flex-wrap: wrap;
+    margin: 12px 0;
+}  
+.circle{
+    width: 50px; 
+    height: 50px; 
+border: 1px solid var(--main-color3); 
+border-radius: 50%; 
+padding: 14px;
+} 
+.circle i{
+    font-size: 20px; 
+    color: var(--main-color3);
+}
+
+.footer-country-text{
+    font-family: var(--main-clash-grotesk-r); 
+    font-size: 25px; 
+    font-family: 400; 
+    text-transform: capitalize;
+} 
+.divider{
+    background-color: var(--main-color3);
+    height: 30px;
+    width: 2px; 
+    margin: 2px 5px;
+}
+.footer-country{
+    display: flex; 
+    flex-wrap: wrap;
+} 
+.divider1{
+    width: 100%; 
+    height: 1px;
+    background-color: var(--main-color3);
+    margin: 30px 0;
+}
+
+/* =========================
+   1200px
+========================= */
+@media (max-width:1200px){
+
+    h1,.h1-title{
+        font-size:70px;
     }
+
+    h2,.h2-title{
+        font-size:52px;
+    }
+
+    .hero-banner{
+        min-height:700px;
+    }
+
+    .box{
+        padding:50px;
+    }
+
+    .table th,
+    .table td{
+        font-size:20px;
+    }
+      .join-aviation-club{
+        padding:160px 0;
+    }
+
+    .join-aviation-club-title{
+        font-size:140px;
+    }
+
+    .join-aviation-club p{
+        font-size:26px;
+    }
+
+ 
+}
+
+/* =========================
+   992px
+========================= */
+@media (max-width:992px){
+
+    h1,.h1-title{
+        font-size:60px;
+    }
+
+    h2,.h2-title{
+        font-size:46px;
+    }
+
+    h4,.h4-title{
+        font-size:40px;
+    }
+
+    .hero-banner{
+        min-height:650px;
+        text-align:center;
+    }
+
+    .cmn-p{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .discover .col-lg-4,
+    .mission .col-lg-3{
+        margin-bottom:30px;
+    }
+    .discover-overlay ,h3-title, .discover-overlay-sub{
+    margin: 8px 0;
+}
+    .box{
+        padding:40px 30px;
+        min-height:auto;
+        text-align:center;
+    }
+
+    .box img{
+        margin-top:30px;
+    }
+
+    .our-client img{
+        max-width:100%;
+        height:auto;
+    }
+
+    .footer .col-lg-2,
+    .footer .col-lg-4{
+        margin-top:40px;
+    }
+
+    .table{
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
+    }
+    .join-aviation-club{
+        padding:120px 0;
+    }
+
+    .join-aviation-club-title{
+        font-size:100px;
+    }
+
+    .join-aviation-club p{
+        font-size:22px;
+        max-width:100%;
+    }
+
+    .form-label{
+        margin-left:0;
+    }
+
+
+
+}
+
+/* =========================
+   768px
+========================= */
+@media (max-width:768px){
+
+    .cmn-gap{
+        padding-top:70px;
+    }
+
+    h1,.h1-title{
+        font-size:48px;
+    }
+
+    h2,.h2-title{
+        font-size:38px;
+    }
+
+    h4,.h4-title{
+        font-size:32px;
+    }
+
+    .hero-banner{
+        min-height:550px;
+    }
+
+    .cmn-p{
+        font-size:18px;
+    }
+
+    .custom-video{
+        min-height:300px;
+    }
+
+    .discover-img img{
+        min-height:350px;
+    }
+
+    .box{
+        padding:30px 20px;
+        border-radius:30px;
+    }
+
+    .box1{
+        min-height:auto;
+    }
+
+    .box2{
+        padding:25px;
+        min-height:auto;
+    } 
+    .discover-overlay ,h3-title, .discover-overlay-sub{
+    margin: 8px 0;
+}
+
+    /* Footer */
+    .footer .col-lg-4,
+    .footer .col-lg-2{
+        margin-bottom:35px;
+    }
+
+    .footer-img{
+        margin:0;
+    }
+
+    .footer-circle{
+        justify-content:flex-start;
+    }
+     .join-aviation-club{
+        padding:90px 0;
+    }
+
+    .join-aviation-club .h2-title{
+        margin:30px 0 20px;
+    }
+
+    .join-aviation-club-title{
+        font-size:70px;
+        line-height:1;
+    }
+
+    .join-aviation-club p{
+        font-size:18px;
+    }
+
+    .form-label{
+        font-size:18px;
+    }
+
+    .form-control{
+        padding:16px;
+        margin-bottom:20px;
+    }
+
+    .polygon{
+        display:none;
+    }
+
+}
+
+/* =========================
+   576px
+========================= */
+@media (max-width:576px){ 
+    .join-aviation-club{
+        padding:70px 0;
+        text-align:center;
+    }
+
+    .join-aviation-club-title{
+        font-size:48px;
+    }
+
+    .join-aviation-club .h2-title{
+        margin:20px 0 15px;
+    }
+
+    .join-aviation-club p{
+        font-size:16px;
+        line-height:1.5;
+        max-width:100%;
+    }
+
+    .form-label{
+        font-size:16px;
+        text-align:left;
+        display:block;
+    }
+
+    .form-control{
+        padding:14px;
+        border-radius:12px;
+    }
+
+    h1,.h1-title{
+        font-size:38px;
+    }
+
+    h2,.h2-title{
+        font-size:30px;
+    }
+
+    h3,.h3-title{
+        font-size:24px;
+    }
+
+    h4,.h4-title{
+        font-size:26px;
+    }
+
+    .cmn-btn,
+    .cmn-btn1,
+    .cmn-btn2{
+        font-size:16px;
+        padding:14px 18px;
+    }
+
+    .subheading{
+        font-size:18px;
+    }
+
+    .discover-img img{
+        min-height:280px;
+    }
+
+    .discover-overlay-sub{
+        margin-bottom:15px;
+    }
+
+    .client-image{
+        width:90px;
+        height:120px;
+    }
+
+    .client-title{
+        font-size:16px;
+    }
+
+    .client-text{
+        font-size:14px;
+    }
+    .discover-overlay ,.h3-title, .discover-overlay-sub{
+    margin: 8px 0;
+}
+    /* Footer */
+    .footer .d-flex{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .cmn-btn3{
+        margin-top:15px;
+    }
+
+    .circle{
+        margin:5px 10px 5px 0;
+    }
+
+    .footer-circle{
+        justify-content:flex-start;
+    }
+}
+
+    .discover-overlay ,h3-title, .discover-overlay-sub{
+    margin: 20px 0 0;
 }
