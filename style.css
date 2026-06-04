@@ -874,248 +874,369 @@ padding: 14px;
 }
 
 
+/* =========================
+   1200px
+========================= */
+@media screen and (max-width:1200px){
+.testimonal-btn{
+    left:420px;
+}
 
 
-/* ===================== 900px ===================== */
-@media (max-width:900px){
+h1,.h1-title{
+    font-size:70px;
+    max-width:700px;
+}
 
-    .discover-img{
-        padding-bottom:60px;
-        margin-bottom:30px;
-    }
+h2,.h2-title{
+    font-size:55px;
+}
 
-    .discover-img img{
-        min-height:400px;
-    }
+.hero-banner{
+    min-height:700px;
+}
 
-    .box{
-        min-height:auto;
-        padding:50px;
-    }
+.join-aviation-club-title{
+    font-size:160px;
+}
 
-    .card{
-        margin-bottom:30px;
-    }
+.box{
+    padding:50px;
+}
 
-    .testimonal-btn{
-        left:50%;
-        margin-left:-110px;
-    }
+.testimonal-box{
+    padding:40px;
+}
 
-    .join-aviation-club{
-        padding:120px 0;
-    }
+.cmn-gap{
+    padding:90px 0;
+}
 
-    .join-aviation-club-title{
-        font-size:140px;
-    }
+.join-aviation-club{
+    padding:150px 0;
+}
 
-    .footer-text{
-        max-width:100%;
-    }
+.footer-text{
+    font-size:20px;
+}
+
+.cmn-p{
+    font-size:20px;
+}
+
+}
+
+
+/* =========================
+   900px
+========================= */
+@media screen and (max-width:900px){
+
+.testimonal-btn{
+    left:300px;
+}
+
+.cmn-btn1{
+    padding:12px 40px;
+    font-size:22px;
+}
+
+.testimonal-box{
+    padding:40px;
+} 
+
+
+
+h1,.h1-title{
+    font-size:55px;
+    max-width:100%;
+}
+
+h2,.h2-title{
+    font-size:45px;
+}
+
+h3,.h3-title{
+    font-size:26px;
+}
+
+h4,.h4-title{
+    font-size:38px;
+}
+
+.hero-banner{
+    min-height:600px;
+}
+
+.cmn-gap{
+    padding:70px 0;
+}
+
+.cmn-p{
+    font-size:18px;
+}
+
+.box{
+    padding:35px;
+    min-height:450px;
+}
+
+.testimonal-box{
+    padding:30px;
+}
+
+.client-box{
+    min-height:320px;
+}
+
+.box2{
+    padding:25px;
+    min-height:300px;
+}
+
+.join-aviation-club{
+    padding:120px 0;
+}
+
+.join-aviation-club-title{
+    font-size:110px;
+}
+
+.join-aviation-club p{
+    font-size:24px;
+}
+
+.form-control{
+    padding:18px;
+}
+
+.footer-text{
+    font-size:18px;
+}
+
+.footer-link a{
+    font-size:18px;
+}
+
+.cmn-btn3{
+    font-size:20px;
+}
+.table {
+    display:block;
+    overflow-x:auto;
+   
+}
+}
+
+
+/* =========================
+   540px
+========================= */
+@media screen and (max-width:540px){
+
+
+.testimonal-btn{
+    left:60px;
+    top:-20px;
+}
+
+.cmn-btn1{
+    padding:8px 18px;
+    font-size:16px;
+}
+
+.testimonal-box{
+    padding:15px;
+}
+
+
+h1,.h1-title{
+    font-size:40px;
+}
+
+h2,.h2-title{
+    font-size:34px;
+}
+
+h3,.h3-title{
+    font-size:22px;
+}
+
+h4,.h4-title{
+    font-size:30px;
+}
+
+.hero-banner{
+    min-height:500px;
+}
+
+.cmn-gap{
+    padding:50px 0;
+}
+
+.cmn-p{
+    font-size:16px;
+}
+
+.cmn-btn{
+    padding:12px;
+    font-size:18px;
+}
+
+.cmn-btn1{
+    padding:12px 25px;
+    font-size:18px;
+}
+
+.box{
+    padding:20px;
+    min-height:380px;
+}
+
+.testimonal-box{
+    padding:20px;
+}
+
+.client-box{
+    min-height:280px;
+}
+
+.box2{
+    padding:18px;
+    min-height:280px;
+}
+
+.join-aviation-club{
+    padding:80px 0;
+}
+
+.join-aviation-club-title{
+    font-size:70px;
+}
+
+.join-aviation-club p{
+    font-size:18px;
+}
+
+.form-control{
+    padding:14px;
+}
+
+.footer-text{
+    font-size:16px;
+}
+
+.footer-link a{
+    font-size:16px;
+}
+
+.footer-country-text,
+.footer-country-text a{
+    font-size:16px;
+}
+
+.cmn-btn3{
+    padding:10px 16px;
+    font-size:16px;
+}
+
+}
+
+
+/* =========================
+   320px
+========================= */
+@media screen and (max-width:320px){
+
     
-    .table{
-        display:block;
-        overflow-x: auto;
-    
-    } 
-   .testimonal-img{
-        max-width:450px;
-    }
-
-
+h1,.h1-title{
+    font-size:32px;
 }
 
-/* ===================== 540px ===================== */
-@media (max-width:540px){ 
-
-     .testimonal-img{
-        max-width:100%;
-    }
-
-    .divider-section{
-        margin:40px 0;
-    }
-
-    .cmn-btn1{
-        padding:10px 20px;
-        font-size:18px;
-    }
-
-    .discover-img{
-        padding-bottom:50px;
-        margin-bottom:25px;
-    }
-
-    .discover-img img{
-        min-height:300px;
-    }
-
-    .discover-overlay-sub{
-        margin-bottom:15px;
-    }
-
-    .discover-overlay-btn{
-        padding:12px 18px;
-    }
-
-    .box{
-        padding:25px;
-        border-radius:30px;
-    }
-
-    .box::after{
-        left:25px;
-        width:80px;
-    }
-
-    .table th,
-    .table td{
-        font-size:16px;
-    }
-
-    .card{
-        margin-bottom:25px;
-    }
-
-    .card-title{
-        font-size:22px;
-    }
-
-    .testimonal-box{
-        padding:20px;
-    }
-
-    .testimonal-btn{
-        left:50%;
-        margin-left:-80px;
-        top:-20px;
-    }
-
-    .box1{
-        min-height:auto;
-        margin:20px 0;
-    }
-
-    .client-box{
-        min-height:auto;
-    }
-
-    .box2{
-        min-height:auto;
-        padding:25px;
-    }
-
-    .join-aviation-club{
-        padding:80px 0;
-    }
-
-    .join-aviation-club-title{
-        font-size:90px;
-    }
-
-    .join-aviation-club p{
-        font-size:20px;
-    }
-
-    .form-control{
-        padding:15px;
-    }
-
-    .footer{
-        padding:40px 20px;
-    }
-
-    .footer-img{
-        margin-bottom:20px;
-    }
-
-    .footer-link{
-        margin-top:10px;
-    }
-
-    .footer-country-text{
-        font-size:18px;
-    }
-
-    .cmn-btn3{
-        padding:10px 16px;
-        font-size:18px;
-    }
-
+h2,.h2-title{
+    font-size:26px;
 }
 
-/* ===================== 320px ===================== */
-@media (max-width:320px){
-        .testimonal-img{
-        width:100%;
-        height:250px;
-    }
-
-    .discover-img img{
-        min-height:220px;
-    }
-
-    .discover-overlay-btn{
-        padding:10px 14px;
-        font-size:12px;
-    }
-
-    .cmn-btn1{
-        padding:8px 14px;
-        font-size:15px;
-    }
-
-    .box{
-        padding:15px;
-    }
-
-    .table th,
-    .table td{
-        font-size:14px;
-    }
-
-    .card-title{
-        font-size:18px;
-    }
-
-    .card-text{
-        font-size:14px;
-    }
-
-    .box2{
-        padding:15px;
-    }
-
-    .cmn-p2{
-        font-size:14px;
-    }
-
-    .join-aviation-club-title{
-        font-size:70px;
-    }
-
-    .join-aviation-club p{
-        font-size:16px;
-    }
-
-    .form-label{
-        font-size:16px;
-    }
-
-    .footer-text{
-        font-size:16px;
-    }
-
-    .footer-country-text{
-        font-size:15px;
-    }
-
-    .circle{
-        width:40px;
-        height:40px;
-        padding:10px;
-    }
-
+h3,.h3-title{
+    font-size:18px;
 }
 
+h4,.h4-title{
+    font-size:22px;
+}
+
+.hero-banner{
+    min-height:420px;
+}
+
+.cmn-gap{
+    padding:40px 0;
+}
+
+.cmn-p{
+    font-size:14px;
+}
+
+.cmn-btn{
+    padding:10px;
+    font-size:16px;
+}
+
+.cmn-btn1{
+    padding:10px 15px;
+    font-size:16px;
+}
+
+.box{
+    padding:15px;
+    min-height:340px;
+}
+
+.testimonal-box{
+    padding:15px;
+}
+
+.client-box{
+    min-height:260px;
+}
+
+.box2{
+    padding:15px;
+    min-height:260px;
+}
+
+.join-aviation-club{
+    padding:60px 0;
+}
+
+.join-aviation-club-title{
+    font-size:50px;
+}
+
+.join-aviation-club p{
+    font-size:16px;
+}
+
+.form-control{
+    padding:12px;
+}
+
+.footer-text{
+    font-size:14px;
+}
+
+.footer-link a{
+    font-size:14px;
+}
+
+.footer-country-text,
+.footer-country-text a{
+    font-size:14px;
+}
+
+.cmn-btn3{
+    padding:8px 12px;
+    font-size:14px;
+}
+
+}
