@@ -830,8 +830,9 @@ input[type="email"]{
     border-radius: 50px;
     border: 2px solid var(--main-color3);
     outline: none;
-    font-size: 25px; 
-    color: var(--main-color1);
+    font-size: 15px; 
+    color: var(--main-color1); 
+    font-family: var(--main-clash-grotesk-r);
 }
 input::placeholder{
     color: var(--main-color1);
@@ -845,7 +846,7 @@ input::placeholder{
     color: var(--main-color2);
     text-decoration: none;
     border-radius: 40px;
-    padding: 18px 40px;
+    padding: 10px 20px;
     font-size: 25px;
     display: inline-block;
 }
@@ -972,7 +973,10 @@ h2,.h2-title{
 .join-aviation-img{
 width: 100%;
 height: 100%;
-} 
+}  
+.table .discover-overlay-btn{
+    padding: 4px 3px;
+}
 .cmn-btn1{
     padding:12px 40px;
     font-size:22px;
