@@ -398,7 +398,7 @@ url(img/banner.png);
 .discover-overlay {
     position: absolute;
     /* for text bottom 10px */
-    bottom: 10px;        
+    bottom: -12px;        
     left: 0;
     width: 100%; /*it taken full width*/
     z-index: 3;
@@ -538,6 +538,7 @@ z-index: -1;
     position: relative; 
     max-width: 362px;
     min-height: 581px;
+    margin-right: 12px;
 } 
 .card-img-top{
     border-radius: 16px;
@@ -1206,7 +1207,9 @@ h4,.h4-title{
     right: 50px;
    
 }
-
+.discover-overlay{
+    bottom: -23px;
+}
 
 h1,.h1-title{
     font-size:32px;
