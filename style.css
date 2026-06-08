@@ -982,7 +982,10 @@ h2,.h2-title{
     height: 100%;
 
  }
-
+.discover-overlay{
+    bottom: -9px; 
+    /* top: 223px; */
+}
 
 }
 
@@ -1041,7 +1044,7 @@ h4,.h4-title{
     padding:70px 0;
 } 
 .discover-overlay{
-    bottom: -23px;
+    bottom: -5px;
 }
 
 .cmn-p{
@@ -1287,7 +1290,7 @@ h4,.h4-title{
    
 }
 .discover-overlay{
-    bottom: -23px;
+    bottom: -6px;
 }
 
 h1,.h1-title{
