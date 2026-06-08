@@ -547,7 +547,16 @@ padding-top: 23px;
     display: block; 
     position: relative; 
     z-index: 1;
+}  
+.card-img-top{
+    transform: scale(0.9); 
+    cursor: pointer;  
+    transition: all 0.3s ease;
 } 
+
+.card-img-top:hover{
+    transform: scale(1);
+}
 .card-body{
     position: absolute;
     left: 20px; 
@@ -677,8 +686,14 @@ right: -25px;
     border-radius: 16px; 
     position: relative; 
     z-index: 1; 
-    margin: 12px 0;
-} 
+    margin: 12px 0; 
+    transform: scale(1); 
+    transition: all 0.3s ease; 
+    cursor: pointer;
+}  
+.box2:hover{
+    transform: scale(0.9);
+}
 .bar1{
     position: absolute; 
     z-index: 2; 
@@ -862,8 +877,14 @@ input::placeholder{
     height: 50px; 
 border: 1px solid var(--main-color3); 
 border-radius: 50%; 
-padding: 14px;
-} 
+padding: 14px; 
+transform: scale(0.9);
+transition: all 0.3s ease; 
+margin-right: 23px;
+}  
+.circle:hover{
+    transform: scale(1);
+}
 .circle i{
     font-size: 20px; 
     color: var(--main-color3);
@@ -883,7 +904,11 @@ padding: 14px;
     font-family: 400; 
     text-transform: capitalize;
     color: var(--main-color1);
+    transition: all 0.3s ease;
 
+} 
+.footer-country-text a:hover{
+    color: var(--main-color3);
 }
 .divider{
     background-color: var(--main-color3);
@@ -1106,7 +1131,8 @@ h4,.h4-title{
     background: #080806;
     border: 1px solid rgba(219, 199, 97, 0.35);
     border-radius: 30px;
-  }
+  } 
+ 
   .responsive-table td {
     display: flex;
     justify-content: space-between;
