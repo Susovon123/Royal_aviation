@@ -533,12 +533,76 @@ padding-top: 23px;
     max-width: 715px;
 }
 
+
+.client{
+    padding:80px 0;
+}
+
+.card{
+    width:100%;
+    max-width: 362px;
+    min-height:661px;
+    /* padding:20px 11px 132px; */
+
+    border-radius:40px;
+
+    background:
+        linear-gradient(#000,#000) padding-box,
+        linear-gradient(-12deg,#DDCA67,#000,#000) border-box;
+
+    border:1px solid transparent;
+
+    text-align:center;  
+    padding: 24px 22px;
+
+}
+
+.circle-client{
+    width:220px;
+    height:220px;
+
+    margin:0 auto 10px;
+
+    border-radius:100%;
+    /* overflow:hidden; */
+
+    background:
+        linear-gradient(#000,#000) padding-box,
+        linear-gradient(-12deg,#DDCA67,#000,#000) border-box;
+
+    border:1px solid transparent;
+}
+
+.card-img-top{
+    width:100%;
+    height:100%; 
+    display: block;
+    object-fit:contain;
+}
+
+
+
+.card p{
+    color:var(--main-color1);
+    font-family: var(--main-clash-grotesk-r);
+    font-size:22px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.image-overlay{
+    width: 100%;
+    display: block;
+}
+
 /* our clients say flying  */ 
 .our-client .h2-title{
     max-width: 625px; 
     margin: 40px 0;
  
-}  
+}   
+
+
 .our-client{
  
     /* padding: 20px; */  
