@@ -541,7 +541,7 @@ padding-top: 23px;
 .card{
     width:100%;
     max-width: 362px;
-    min-height:661px;
+    /* min-height:661px; */
     /* padding:20px 11px 132px; */
 
     border-radius:40px;
@@ -564,7 +564,9 @@ padding-top: 23px;
     margin:0 auto 10px;
 
     border-radius:100%;
-    /* overflow:hidden; */
+    overflow:hidden;
+    position: relative;
+
 
     background:
         linear-gradient(#000,#000) padding-box,
@@ -578,6 +580,9 @@ padding-top: 23px;
     height:100%; 
     display: block;
     object-fit:contain;
+    z-index: 999; 
+    bottom: 30px; 
+    inset: 0;
 }
 
 
@@ -588,10 +593,16 @@ padding-top: 23px;
     font-size:22px;
     text-transform: capitalize;
     font-weight: 400;
+    position: relative;
+    margin-bottom: 60px;
 }
 
 .image-overlay{
-    width: 100%;
+    width: 226px; 
+    position: absolute; 
+    z-index: 2; 
+    bottom: -54px; 
+    left: 40px;
     display: block;
 }
 
